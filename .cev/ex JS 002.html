@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos
+        brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total
+        de eleitores.*/
+
+        var val = Number(window.prompt('Do total de eleitores, quantos votos são válidos?'))
+        var bra = Number(window.prompt('Quantos votaram em branco?'))
+        var nul = Number(window.prompt('E quantos votaram nulo?'))
+
+        var total = val+bra+nul
+        val = (val/total)*100
+        bra = (bra/total)*100
+        nul = (nul/total)*100
+
+        document.write(`Votos válidos: ${val.toFixed(1)}%</br>Votos em branco: ${bra.toFixed(1)}%</br>Votos nulos: ${nul.toFixed(1)}%`)
+    </script>
+</body>
+</html>

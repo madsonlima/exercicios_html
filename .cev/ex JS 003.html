@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do
+        distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor
+        seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro,
+        calcular e escrever o custo final ao consumidor.*/
+
+        var preço = Number(window.prompt('Qual o custo de fábrica?'))
+
+        preço = preço + preço*0.28 + preço*0.45
+
+        /* Comando deu erro!
+        preço = preço.toLocaleString(`pt-BR`, {style `currency`, currency `BRL`})*/
+
+        document.write(`O preço final é R$${preço}.`)
+    </script>
+</body>
+</html>

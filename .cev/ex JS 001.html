@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade
+        dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.*/
+        var ano = Number(window.prompt("Quantos anos você tem?"))
+        var mes = Number(window.prompt("Quantos meses já se passaram do seu aniversário? (sem contar o que estamos!)"))
+        var dia = Number(window.prompt("Qual o dia do seu aniversário?"))
+        var hoje = Number(window.prompt("Que dia é hoje?"))
+
+        var total = ano*365 + mes*30 + 30 - dia + hoje
+        document.write(`Você viveu ${total} dias!`)
+    </script>
+</body>
+</html>
